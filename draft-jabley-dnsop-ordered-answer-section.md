@@ -20,8 +20,8 @@ venue:
   type: "Working Group"
   mail: "dnsop@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/dnsop/"
-  github: "ableyjoe/draft-jabley-dnsop-ordered-sections"
-  latest: "https://ableyjoe.github.io/draft-jabley-dnsop-ordered-sections/draft-jabley-dnsop-ordered-sections.html"
+  github: "ableyjoe/draft-jabley-dnsop-ordered-answer-section"
+  latest: "https://ableyjoe.github.io/draft-jabley-dnsop-ordered-answer-section/draft-jabley-dnsop-ordered-answer-section.html"
 
 author:
  -
