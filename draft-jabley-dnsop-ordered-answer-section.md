@@ -151,8 +151,8 @@ This document has no IANA actions.
 Cloudflare operates a well-known public DNS resolver known as
 1.1.1.1, after one of the IPv4 addresses associated with the service.
 On 8 January a software change in the 1.1.1.1 service had the
-unintential side-effect of changing the order in which RRSets were
-encoded in the answer section of DNS responses, in the case where
+unintentional side-effect of changing the order in which RRSets were
+included in the answer section of DNS responses, in the case where
 constructing the responses involved CNAME processing. The previous
 ordering was as clarified in {{rfc1034_updates}} and {{rfc1035_updates}}. The change in behaviour
 was not detected by a corresponding failure in a regression test,
@@ -162,7 +162,7 @@ significant.
 Following the software release, Cloudflare became aware of significant
 numbers of deployed DNS client implementations that were suffering
 from failure. In particular, the getanswer_r() function invoked by
-the getaddrinfo() function in glibc was found to fail to function,
+the getaddrinfo() function in glibc was found to rely on the previous order,
 and some deployed ethernet switches were observed to reboot when
 trying to resolve the names of configured NTP servers {{Cisco2026}}.
 
