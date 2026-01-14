@@ -3,7 +3,7 @@ title: "Ordering of RRSets in DNS Message Sections"
 category: std
 updates: 1034,1035
 
-docname: draft-jabley-dnsop-ordered-sections-latest
+docname: draft-jabley-dnsop-ordered-answer-section-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
