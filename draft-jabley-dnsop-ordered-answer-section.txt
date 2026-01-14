@@ -10,7 +10,7 @@ Expires: 18 July 2026
 
 
                Ordering of RRSets in DNS Message Sections
-               draft-jabley-dnsop-ordered-sections-latest
+            draft-jabley-dnsop-ordered-answer-section-latest
 
 Abstract
 
@@ -26,10 +26,10 @@ About This Document
    This note is to be removed before publishing as an RFC.
 
    The latest revision of this draft can be found at
-   https://ableyjoe.github.io/draft-jabley-dnsop-ordered-sections/draft-
-   jabley-dnsop-ordered-sections.html.  Status information for this
-   document may be found at https://datatracker.ietf.org/doc/draft-
-   jabley-dnsop-ordered-sections/.
+   https://ableyjoe.github.io/draft-jabley-dnsop-ordered-answer-section/
+   draft-jabley-dnsop-ordered-answer-section.html.  Status information
+   for this document may be found at https://datatracker.ietf.org/doc/
+   draft-jabley-dnsop-ordered-answer-section/.
 
    Discussion of this document takes place on the Domain Name System
    Operations Working Group mailing list (mailto:dnsop@ietf.org), which
@@ -37,7 +37,8 @@ About This Document
    Subscribe at https://www.ietf.org/mailman/listinfo/dnsop/.
 
    Source for this draft and an issue tracker can be found at
-   https://github.com/ableyjoe/draft-jabley-dnsop-ordered-sections.
+   https://github.com/ableyjoe/draft-jabley-dnsop-ordered-answer-
+   section.
 
 Status of This Memo
 
