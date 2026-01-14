@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
+
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+  <!ENTITY rfc1034 PUBLIC ''
+    'http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.1034.xml'>
+  <!ENTITY rfc1035 PUBLIC ''
+    'http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.1035.xml'>
+  <!ENTITY rfc2119 PUBLIC ''
+    'http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml'>
+  <!ENTITY I-D.ietf-dnsop-dns-terminology PUBLIC ''
+    'http://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-dnsop-dns-terminology.xml'>
+]>
+
+<rfc category="std" ipr="trust200902" updates="1034, 1035"
+  docName="draft-jabley-dnsop-ordered-sections-00">
+
+  <?rfc toc="yes" ?>
+  <?rfc symrefs="yes" ?>
+  <?rfc sortrefs="yes"?>
+  <?rfc iprnotified="no" ?>
+  <?rfc strict="yes" ?>
+
+  <front>
+    <title abbrev="Ordering of RRSets in DNS Messages">Ordering of
+      RRSets in DNS Message Sections</title>
+
+    <author initials='J.' surname="Abley" fullname='Joe Abley'>
+      <organization>Dyn, Inc.</organization>
+      <address>
+        <postal>
+          <street>103-186 Albert Street</street>
+          <city>London</city>
+          <region>ON</region>
+          <code>N6A 1M1</code>
+          <country>Canada</country>
+        </postal>
+        <phone>+1 519 670 9327</phone>
+        <email>jabley@dyn.com</email>
+      </address>
+    </author>
+
+    <date day="19" month="August" year="2015"/>
+
+    <abstract>
+      <t>The existing Domain Name System (DNS) specifications lack
+	some clarity in their description of the process by which
+	individual sections of a DNS message are constructed.</t>
+
+      <t>This document updates RFC 1034 and RFC 1035 to provide
+	a clearer specification, consistent with deployed
+	implementations.</t>
+    </abstract>
+  </front>
+
+  <middle>
+    <section title="Terminology">
+      <t>This document uses terminology specific to the Domain Name
+        System (DNS), descriptions of which can be found in
+        <xref target="I-D.ietf-dnsop-dns-terminology"/>.</t>
+
+      <t>In an exchange of DNS messages between two hosts, this document
+        refers to the host sending a DNS request as the initiator and
+        the host sending a DNS response as the responder.</t>
+
+      <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL",
+        "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY"
+        and "OPTIONAL" in this document are to be interpreted as
+        described in <xref target="RFC2119"/>.</t>
+    </section>
+
+
+    <section title="Introduction">
+      <t><xref target="RFC1034"/> specifies an algorithm for use by
+	responders when constructing a DNS response. This algorithm
+	in some cases can result in multiple RRSets being included
+	in a single section of a DNS message, e.g. when handling
+	CNAME resource records.</t>
+
+      <t>Most responder implementations [citation needed] have
+	interpreted the direction to copy or store particular RRSets
+	in sections of a DNS response to mean "append", treating
+	each section as an ordered list of RRSets.  Some initiators
+	[citation needed] are known to rely upon that interpretation when
+        processing DNS responses received from responders.</t>
+
+      <t>This document updates <xref target="RFC1035"/> to specify
+	that every section in a DNS message is an ordered list of
+	RRSets and clarifies the directions provided in <xref
+	target="RFC1034"/> to match the observed behaviour and
+	expectations of deployed software.</t>
+    </section>
+
+    <section title="Updates to RFC 1034" anchor="algorithm">
+      <t><xref target="RFC1034"/> specifies the algorithms by which
+	sections of a DNS response are constructed by a responder.
+	For example, step 3 of the algorithm described in <xref
+	target="RFC1034"/> section 4.3.2 contains the direction
+	"copy all RRs which match QTYPE into answer section".</t>
+
+      <t>In this case, and in all other cases where <xref
+	target="RFC1034"/> specifies that particular RRSets be
+	included in a section of a DNS message, the section MUST
+	be treated as an ordered list of RRSets. When it is necessary
+	to include new RRSets in a section of a DNS message that
+	is under construction, those RRSets MUST be appended.</t>
+    </section>
+
+    <section title="Updates to RFC 1035">
+      <t>In a DNS message, every section MUST be considered to be
+        an ordered set of RRSets.</t>
+
+      <t>DNS responders MUST construct each section in a DNS response
+	according to the algorithms specified in <xref target="RFC1034"/>,
+	as clarified in <xref target="algorithm"/> of this document.</t>
+    </section>
+
+    <section title="Security Considerations">
+      <t>The recommendations contained in this document have no
+        known security implications.</t>
+    </section>
+
+    <section title="IANA Considerations">
+      <t>This document has no IANA actions.</t>
+    </section>
+
+    <section title="Acknowledgements">
+      <t>Your name here, etc.</t>
+    </section>
+  </middle>
+
+  <back>
+    <references title="Normative References">
+      &rfc1034;
+      &rfc1035;
+      &rfc2119;
+    </references>
+
+    <references title="Informative References">
+      &I-D.ietf-dnsop-dns-terminology;
+    </references>
+
+    <section title="Editorial Notes">
+      <t>This section (and sub-sections) to be removed prior to
+        publication.</t>
+
+      <section title="Venue">
+        <t>An appropriate forum for discussion of this draft is
+          the dnsop working group.</t>
+      </section>
+
+      <section title="Change History">
+        <section title="draft-jabley-dnsop-ordered-sections-00">
+          <t>Initial draft circulated for comment.</t>
+        </section>
+      </section>
+    </section>
+  </back>
+</rfc>
+
