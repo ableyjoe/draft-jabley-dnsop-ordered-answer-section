@@ -1,0 +1,81 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2026-01-15T01:00:16.373968+00:00",
+  "repo": "ableyjoe/draft-jabley-dnsop-ordered-answer-section",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOQ5sdqM69L2hD",
+      "title": "Update draft-jabley-dnsop-ordered-answer-section.md",
+      "url": "https://github.com/ableyjoe/draft-jabley-dnsop-ordered-answer-section/pull/1",
+      "state": "OPEN",
+      "author": "peterthomassen",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Rationale:\r\n1. typo\r\n2. \"order in which RRSets were encoded\" sounded to me like the order used when encoding each individual RRset (i.e., within the RRset), which is not the intended meaning. May well be my misunderstanding.\r\n3. Not sure if there's consensus that glibc actually failed.",
+      "createdAt": "2026-01-14T15:42:14Z",
+      "updatedAt": "2026-01-14T15:42:14Z",
+      "baseRepository": "ableyjoe/draft-jabley-dnsop-ordered-answer-section",
+      "baseRefName": "main",
+      "baseRefOid": "770c8764e32a91441a4e3f0f55b29fcf9c72d4d4",
+      "headRepository": "peterthomassen/draft-jabley-dnsop-ordered-answer-section",
+      "headRefName": "patch-1",
+      "headRefOid": "da4f4d913f55ef2bfa33b0684cb2c0e0b2b9c620",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
