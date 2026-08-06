@@ -5,8 +5,8 @@
 Domain Name System Operations                                   J. Abley
 Internet-Draft                                              S. Neuteboom
 Updates: 10341035 (if approved)                               Cloudflare
-Intended status: Standards Track                         14 January 2026
-Expires: 18 July 2026
+Intended status: Standards Track                           6 August 2026
+Expires: 7 February 2027
 
 
                Ordering of RRSets in DNS Message Sections
@@ -55,7 +55,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 18 July 2026.
+   This Internet-Draft will expire on 7 February 2027.
 
 Copyright Notice
 
@@ -86,6 +86,7 @@ Table of Contents
    Appendix B.  Editorial Notes (remove before publication)
      B.1.  draft-jabley-dnsop-ordered-sections-00
      B.2.  draft-jabley-dnsop-ordered-answer-section-00
+     B.3.  draft-jabley-dnsop-ordered-answer-section-01
    Acknowledgments
    Authors' Addresses
 
@@ -245,6 +246,10 @@ B.2.  draft-jabley-dnsop-ordered-answer-section-00
    Draft revitalised following some operational excitement.
 
    Added competent co-author.
+
+B.3.  draft-jabley-dnsop-ordered-answer-section-01
+
+   Bumped version number while we wait patiently for wg time.
 
 Acknowledgments
 
