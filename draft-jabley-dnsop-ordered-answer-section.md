@@ -310,5 +310,11 @@ was considered by the working group to be unnecessary.
 # Acknowledgments
 {:numbered="false"}
 
-The contributions of Mark Andrews and Paul Vixie to the original
-revision of this document are acknowledged.
+Mark Andrews and Paul Vixie contributed to the original revision
+of this document in 2015, triggered by a similar event to that
+described in {{cloudflare}}. This revision benefited from advice
+from Petr Špaček, Robert Edmonds, Paul Wouters, Peter Thomassen,
+Florian Weimer, Dave Lawrence, Mark Andrews (again), Libor Peltan,
+Warren Kumari, Philip Homburg, Ondřej Surý, John Levine, Manu
+Bretelle, Kevin Fleming and Xiang Li.
+
