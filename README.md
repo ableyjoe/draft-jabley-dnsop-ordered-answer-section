@@ -1,8 +1,9 @@
 <!-- regenerate: on (set to off if you edit this file) -->
 
-# Ordering of RRSets in DNS Message Sections
+# Ordering of RRSets in CNAME Responses in the DNS
 
-This is the working area for the individual Internet-Draft, "Ordering of RRSets in DNS Message Sections".
+This is the working area for the individual Internet-Draft, "Ordering
+of RRSets in CNAME Responses in the DNS".
 
 * [Editor's Copy](https://ableyjoe.github.io/draft-jabley-dnsop-ordered-answer-section/#go.draft-jabley-dnsop-ordered-answer-section.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-jabley-dnsop-ordered-answer-section)
