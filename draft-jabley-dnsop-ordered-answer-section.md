@@ -256,17 +256,18 @@ On 8 January a software change in the 1.1.1.1 service had the
 unintential side-effect of changing the order in which RRSets were
 encoded in the answer section of DNS responses, in the case where
 constructing the responses involved CNAME processing. The previous
-ordering was as clarified in {{rfc1034_updates}} and {{rfc1035_updates}}. The change in behaviour
+ordering was as described in {{updates}}. The change in behaviour
 was not detected by a corresponding failure in a regression test,
 since the ordering in the answer section was not considered to be
 significant.
 
 Following the software release, Cloudflare became aware of significant
 numbers of deployed DNS client implementations that were suffering
-from failure. In particular, the getanswer_r() function invoked by
-the getaddrinfo() function in glibc was found to fail to function,
-and some deployed ethernet switches were observed to reboot when
-trying to resolve the names of configured NTP servers {{Cisco2026}}.
+from failure. In particular, the `getanswer_r()` function invoked
+by the `getaddrinfo()` function in glibc was found to fail to
+function, and some deployed ethernet switches were observed to
+reboot when trying to resolve the names of configured NTP servers
+{{Cisco2026}}.
 
 The impact associated with this event was particularly widespread
 because of the widespread use of the 1.1.1.1 resolver. However, the
