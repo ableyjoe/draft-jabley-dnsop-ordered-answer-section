@@ -1349,11 +1349,12 @@ answer.
 </div>
 </li>
       </ul>
-<p id="section-3-9">While the word "preface" suggests that CNAME RRs should precede other
-records, this language is descriptive rather than normative,
-lacking the explicit requirement keywords defined in <span>[<a href="#RFC2119" class="cite xref">RFC2119</a>]</span>.  This
-ambiguity has led to varying interpretations among implementers and
-contributed to interoperability issues as described in Section 4.<a href="#section-3-9" class="pilcrow">¶</a></p>
+<p id="section-3-9">While the word "preface" suggests that CNAME RRs should precede
+other records, this language is descriptive rather than normative,
+lacking the explicit requirement keywords that would later be defined
+in <span>[<a href="#RFC2119" class="cite xref">RFC2119</a>]</span>.  This ambiguity has led to varying interpretations
+among implementers and contributed to interoperability issues as
+described in <a href="#impact" class="auto internal xref">Section 4</a>.<a href="#section-3-9" class="pilcrow">¶</a></p>
 <p id="section-3-10">This document aims to resolve this ambiguity with a clear specification
 for the ordering of RRSets in the answer section of a DNS message
 for CNAME responses (see <a href="#updates" class="auto internal xref">Section 5</a>).<a href="#section-3-10" class="pilcrow">¶</a></p>
@@ -1379,7 +1380,10 @@ interpreted as "append", and react badly when they receive responses
 that do not meet this expectation, this document updates the DNS
 standard to choose and require the interpretation of <span>[<a href="#RFC1034" class="cite xref">RFC1034</a>]</span>
 that promotes the greatest operational stability as described in
-<a href="#updates" class="auto internal xref">Section 5</a>.<a href="#section-4-3" class="pilcrow">¶</a></p>
+<a href="#updates" class="auto internal xref">Section 5</a>. This is a pragmatic measure undertaken in recognition
+of the significant installed base of software that have this
+expectation, and in particular the degree to which such software
+is deployed in unmanaged devices that might never be updated.<a href="#section-4-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="updates">
