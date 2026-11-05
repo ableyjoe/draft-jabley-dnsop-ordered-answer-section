@@ -200,10 +200,10 @@ is deployed in unmanaged devices that might never be updated.
 
 A DNS implementation following the algorithm described in {{!RFC1034}}
 MUST interpret any direction to "copy RRs into the answer section"
-to mean that the RRs concerned should be appended to any existing
-records that have already been accumulated in an earlier step of
-the algorithm. The ordering of individual RRs within the set of RRs
-being appended to the answer section in any step is not significant.
+when processing CNAMEs to mean that the RRs concerned should be
+appended to any existing records that have already been accumulated
+in an earlier step of the algorithm. The ordering of individual RRs
+within an RRSet is not significant.
 
 In the case where one or more CNAME RRs are processed in order to
 construct a DNS response, the answer section MUST include a CNAME
