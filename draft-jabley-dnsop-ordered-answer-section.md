@@ -161,11 +161,12 @@ recursive responses as follows:
 >     CNAME RRs that specify aliases encountered on the way to an
 >     answer.
 
-While the word "preface" suggests that CNAME RRs should precede other
-records, this language is descriptive rather than normative,
-lacking the explicit requirement keywords defined in {{!RFC2119}}.  This
-ambiguity has led to varying interpretations among implementers and
-contributed to interoperability issues as described in Section 4.
+While the word "preface" suggests that CNAME RRs should precede
+other records, this language is descriptive rather than normative,
+lacking the explicit requirement keywords that would later be defined
+in {{!RFC2119}}.  This ambiguity has led to varying interpretations
+among implementers and contributed to interoperability issues as
+described in {{impact}}.
 
 This document aims to resolve this ambiguity with a clear specification
 for the ordering of RRSets in the answer section of a DNS message
@@ -190,7 +191,10 @@ interpreted as "append", and react badly when they receive responses
 that do not meet this expectation, this document updates the DNS
 standard to choose and require the interpretation of {{!RFC1034}}
 that promotes the greatest operational stability as described in
-{{updates}}.
+{{updates}}. This is a pragmatic measure undertaken in recognition
+of the significant installed base of software that have this
+expectation, and in particular the degree to which such software
+is deployed in unmanaged devices that might never be updated.
 
 # Updates to RFC 1034 {#updates}
 
