@@ -1393,10 +1393,10 @@ is deployed in unmanaged devices that might never be updated.<a href="#section-4
       </h2>
 <p id="section-5-1">A DNS implementation following the algorithm described in <span>[<a href="#RFC1034" class="cite xref">RFC1034</a>]</span>
         <span class="bcp14">MUST</span> interpret any direction to "copy RRs into the answer section"
-to mean that the RRs concerned should be appended to any existing
-records that have already been accumulated in an earlier step of
-the algorithm. The ordering of individual RRs within the set of RRs
-being appended to the answer section in any step is not significant.<a href="#section-5-1" class="pilcrow">¶</a></p>
+when processing CNAMEs to mean that the RRs concerned should be
+appended to any existing records that have already been accumulated
+in an earlier step of the algorithm. The ordering of individual RRs
+within an RRSet is not significant.<a href="#section-5-1" class="pilcrow">¶</a></p>
 <p id="section-5-2">In the case where one or more CNAME RRs are processed in order to
 construct a DNS response, the answer section <span class="bcp14">MUST</span> include a CNAME
 RRSet whose owner name matches the QNAME in the query first, and
