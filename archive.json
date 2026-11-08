@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-11-05T04:16:07.004671+00:00",
+  "timestamp": "2026-11-08T03:24:32.942097+00:00",
   "repo": "ableyjoe/draft-jabley-dnsop-ordered-answer-section",
   "labels": [
     {
@@ -63,7 +63,7 @@
       "labels": [],
       "body": "Rationale:\r\n1. typo\r\n2. \"order in which RRSets were encoded\" sounded to me like the order used when encoding each individual RRset (i.e., within the RRset), which is not the intended meaning. May well be my misunderstanding.\r\n3. Not sure if there's consensus that glibc actually failed.",
       "createdAt": "2026-01-14T15:42:14Z",
-      "updatedAt": "2026-01-14T15:42:14Z",
+      "updatedAt": "2026-11-05T16:13:24Z",
       "baseRepository": "ableyjoe/draft-jabley-dnsop-ordered-answer-section",
       "baseRefName": "main",
       "baseRefOid": "770c8764e32a91441a4e3f0f55b29fcf9c72d4d4",
@@ -74,7 +74,15 @@
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
-      "comments": [],
+      "comments": [
+        {
+          "author": "ableyjoe",
+          "authorAssociation": "OWNER",
+          "body": "This PR has been OBE; we determined that we needed to fold in the more narrow text relating to CNAME processing.",
+          "createdAt": "2026-11-05T16:13:24Z",
+          "updatedAt": "2026-11-05T16:13:24Z"
+        }
+      ],
       "reviews": []
     }
   ]
